@@ -23,3 +23,5 @@ x('ff');
 var x = new Function(['a','b','c'],'console.log(arguments); console.log(a+"==>"+b+"==>"+c);');
 x('hello','byee','code');
 ```
+> Reference
+> * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions
