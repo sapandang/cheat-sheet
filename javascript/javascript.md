@@ -25,3 +25,14 @@ x('hello','byee','code');
 ```
 > Reference
 > * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions
+
+# Execute expression
+```javascript
+ function executeExpression(expression){
+        var fun = new Function('value','return ('+expression+')');
+        return fun(12);
+    }
+executeExpression('12');
+```
+
+
