@@ -49,3 +49,53 @@ executeExpression('12');
 ```
 
 
+
+#  Vuejs
+## expression parser
+
+```javascript
+new Vue({
+	el:'#vue',
+  data:{
+  	greeting:'Hello',
+    name:'Vue',
+    string:'{{greeting+1}} {{name}} {{name}}! {{1 + 1}}'
+  },
+  methods:{
+  evalInContext(string){
+    try{
+    	return eval('this.'+string)
+    } catch(error) {
+    	try {
+      	return eval(string)
+      } catch(errorWithoutThis) {
+      	console.warn('Error en script: ' + string, errorWithoutThis)
+      	return null
+      }
+    }
+  },
+  	parse(string){
+    	return string.replace(/{{.*?}}/g, match => {
+      	var expression = match.slice(2, -2)
+        
+        return this.evalInContext(expression)       
+      })
+    }
+  }
+})
+
+//==>> HTML
+<div id="vue">
+  <div>
+    {{parse(string)}}
+  </div>
+</div>
+
+```
+
+
+> Reference:
+> * https://forum.vuejs.org/t/evaluate-string-as-vuejs-on-vuejs2-x/20392/3
+> * https://jsfiddle.net/cpfarher/97tLLq07/3/
+
+
