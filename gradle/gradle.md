@@ -45,6 +45,15 @@ task generateAllScripts() {
 }
 ```
 
+## Change source set
+Add below to build.gradle
+```java
+sourceSets {
+    main.java.srcDirs = ['chalba']
+    main.resources.srcDirs = ['chalba/resources']
+}
+```
+
 
 
 
