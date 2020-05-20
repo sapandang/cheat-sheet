@@ -23,3 +23,10 @@ INSERT INTO tmp_table SELECT * from products GROUP by title HAVING COUNT(`title`
 ```
 DELETE FROM `products` WHERE title in (SELECT title from tmp_table)
 ```
+
+## Join multiple tables
+```sql
+SELECT address.* , country.*,state.*  FROM address 
+LEFT JOIN country ON address.country_id=country._id
+LEFT JOIN state ON address.state_id=state._id;
+```
