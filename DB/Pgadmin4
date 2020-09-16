@@ -1,0 +1,7 @@
+# Running installed pgadmin4
+
+```shell
+ chown sapan: /var/log/pgadmin /var/lib/pgadmin -R
+ sapan@sapan-D:/usr/pgadmin4$ /usr/pgadmin4/venv/bin/python3 pgAdmin4.py
+```
+
