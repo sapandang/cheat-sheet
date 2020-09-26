@@ -23,6 +23,10 @@ INSERT INTO tmp_table SELECT * from products GROUP by title HAVING COUNT(`title`
 ```
 DELETE FROM `products` WHERE title in (SELECT title from tmp_table)
 ```
+## Delete in middle items 
+```
+DELETE from es_preadmission_details WHERE `es_preadmission_detailsid` NOT IN (  SELECT MAX(`es_preadmission_detailsid`)  FROM `bak_es` GROUP BY es_preadmissionid)
+```
 
 ## Join multiple tables
 ```sql
@@ -30,3 +34,4 @@ SELECT address.* , country.*,state.*  FROM address
 LEFT JOIN country ON address.country_id=country._id
 LEFT JOIN state ON address.state_id=state._id;
 ```
+
