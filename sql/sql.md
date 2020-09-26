@@ -25,7 +25,7 @@ DELETE FROM `products` WHERE title in (SELECT title from tmp_table)
 ```
 ## Delete in middle items 
 ```
-DELETE from es_preadmission_details WHERE `es_preadmission_detailsid` NOT IN (  SELECT MAX(`es_preadmission_detailsid`)  FROM `bak_es` GROUP BY es_preadmissionid)
+DELETE from es_preadmission_details WHERE `es_preadmission_detailsid` NOT IN (  SELECT MAX(`es_preadmission_detailsid`)  FROM `bak_es` GROUP BY es_preadmissionid) AND `es_preadmission_detailsid` NOT IN (  SELECT MIN(`es_preadmission_detailsid`)  FROM `bak_es` GROUP BY es_preadmissionid)
 ```
 
 ## Join multiple tables
