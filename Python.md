@@ -10,6 +10,8 @@ sudo apt-get install python3.8-distutils
 ## Install python3.8 venv
 ```
  python3.8 -m pip install --user virtualenv
+ sudo apt-get install python3.8-venv
+ python3.8 -m venv env
 ```
 
 > References
