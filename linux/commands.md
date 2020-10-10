@@ -30,3 +30,8 @@ root    ALL=(ALL:ALL) ALL
 sapan    ALL=(ALL:ALL) ALL
 ```
 
+## Setup nginx
+
+```
+sudo apt-get install nginx
+```
