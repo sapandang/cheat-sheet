@@ -4,6 +4,16 @@
  chown sapan: /var/log/pgadmin /var/lib/pgadmin -R
  sapan@sapan-D:/usr/pgadmin4$ /usr/pgadmin4/venv/bin/python3 /usr/pgadmin4/web/pgAdmin4.py
 ```
+# Running pgadmin inside subdir with nginx
+```
+location /pgadmin4/ {
+    include proxy_params;
+    proxy_pass http://localhost:5050/;
+    proxy_set_header X-Script-Name /pgadmin4;
+}
+
+```
+
 
 
 # install pgadmin
