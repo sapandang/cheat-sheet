@@ -44,3 +44,5 @@ sudo apt install postgis postgresql-12-postgis-3
 https://www.postgresql.org/docs/current/sql-keywords-appendix.html
 https://www.postgresql.org/download/linux/debian/
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04
+https://enterprise.arcgis.com/en/server/10.3/cloud/amazon/change-default-database-passwords-on-linux.htm
+https://www.postgresql.org/docs/8.0/sql-alteruser.html
