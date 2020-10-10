@@ -19,6 +19,22 @@ sudo apt-get install postgresql-12
 
 ```
 
+# Postgres add user
+
+```
+sudo -u postgres createuser --interactive
+# login into posstgres shell
+psql
+# change passwod
+ALTER USER username WITH PASSWORD 'mypass';
+```
+
+# Postgres commands
+* switch to postgres user
+`sudo -i -u postgres`
+
+
+
 ## PostGis
 ```shell
 sudo apt install postgis postgresql-12-postgis-3
