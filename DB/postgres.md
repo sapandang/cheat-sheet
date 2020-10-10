@@ -27,3 +27,4 @@ sudo apt install postgis postgresql-12-postgis-3
 # Keywords
 https://www.postgresql.org/docs/current/sql-keywords-appendix.html
 https://www.postgresql.org/download/linux/debian/
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04
