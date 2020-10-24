@@ -14,6 +14,9 @@ sudo apt-get install postgresql-12
 
 
 ## pg_ctlcluster 12 main start
+Warning: the cluster will not be running as a systemd service. Consider using systemctl:
+  sudo systemctl start postgresql@12-main
+Error: You must run this program as the cluster owner (postgres) or root
 
 
 
