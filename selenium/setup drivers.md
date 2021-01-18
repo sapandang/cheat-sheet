@@ -64,6 +64,7 @@ WebElement allLinks = driver.findElement(By.xpath("//div[@class='quote']"));
 allLinks.getText()
 
 //javascript executor
+ JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
 String zippylink = (String)javascriptExecutor.executeScript("var xs = document.evaluate(\"//*[@id='dle-content']//*/text()[contains(string(),'zippy')]\", document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);\r\n" + 
 					"var dd = xs.snapshotItem(0);\r\n" + 
 					"return dd.textContent;");	
