@@ -73,7 +73,7 @@ xpath of button inside the form
 
 =========================================================
 xpath getting the last element from the list
-:IN FAREYE USED IN USER ROLE ADD FORM
+:USED IN USER ROLE ADD FORM
 
 (//*[@name='userTypeform']//select)[last()]
 
