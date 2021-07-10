@@ -59,7 +59,25 @@
         });
     },
 ```
-    
+# send post request
+```js
+ var req ={
+      datx:""+props.row.now
+    }
+
+    axios.post(urlrepo.POST_cancelorder, req)
+    .then(response => {
+     if (response.status == 200) {
+      console.warn(response.data);
+    }
+    })
+    .catch(error => {
+    console.error(error);
+    })
+    .then(() => {
+    console.warn('');
+    });
+```    
     
     
     
