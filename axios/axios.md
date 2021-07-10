@@ -44,7 +44,7 @@
 ```
     
 # Download File
-    ```js
+```js
      api_downloadTemplateFile() {
       axios
         .get(urlrepo.GET_ORDERV3_cutomer_excel_template, {
@@ -58,7 +58,7 @@
           link.click();
         });
     },
-    ```
+```
     
     
     
