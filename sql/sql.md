@@ -46,6 +46,11 @@ ADD COLUMN category varchar DEFAULT 'bronze'
 ALTER TABLE orders_v2
 ALTER COLUMN task_status set  DEFAULT 'open';
 ```
+## Add JSON object column
+```
+ALTER TABLE orders_v3
+ADD COLUMN customer_price jsonb DEFAULT '{}'
+```
 
 
 
