@@ -35,3 +35,20 @@ LEFT JOIN country ON address.country_id=country._id
 LEFT JOIN state ON address.state_id=state._id;
 ```
 
+# Alter Table
+## add column with default value
+```sql
+ALTER TABLE users
+ADD COLUMN category varchar DEFAULT 'bronze'
+```
+## add only the default value
+```sql
+ALTER TABLE orders_v2
+ALTER COLUMN task_status set  DEFAULT 'open';
+```
+
+
+
+
+
+
