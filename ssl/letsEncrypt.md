@@ -45,12 +45,14 @@ server {
                 proxy_set_header Host $http_host;
                 proxy_pass http://127.0.0.1:8051;
                }
-
+	       
 location ^~ /.well-known/acme-challenge/ {
   default_type "text/plain";
   rewrite /.well-known/acme-challenge/(.*) /$1 break;
-  root /var/www/letsencrypt;
+  root /home/myuser/.well-known/acme-challenge;
 }
+
+
 }
 ```
 
