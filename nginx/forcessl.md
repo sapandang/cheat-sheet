@@ -1,3 +1,5 @@
+
+```
 server {
     listen 80;
     listen [::]:80;
@@ -84,3 +86,4 @@ proxy_set_header    X-Forwarded-Proto $scheme;
 include /etc/nginx-sp/vhosts.d/APPNAME.d/*.nonssl_conf;
 include /etc/nginx-sp/vhosts.d/APPNAME.d/*.conf;
 }
+```
