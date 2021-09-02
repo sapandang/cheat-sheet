@@ -24,3 +24,54 @@ if __name__=='__main__':  #--> Main method in python
 ```
 
 
+## Classes
+Declare class in python and access
+```python
+#apis.py
+
+import requests
+import json
+import time
+
+#endpoints
+MAIN_URL="https://myapp.co"
+API_AUTH=MAIN_URL+"/app/authentication"
+API_ACCOUNT=MAIN_URL+"/app/rest/account"
+API_DYNAMIC_ROUTING_SYNC=MAIN_URL+"/v1/app/rest/dynamic_routing_sync?endDate=2021-08-31&pageNo=0&recordsPerPage=500&sortOn=date&sortType=DESC&startDate=2021-08-09&status=Success";
+
+# API classes
+class apis:
+  API_TOKEN=""
+  API_COOKIES=None
+
+  def __init__(self):  #--> must have self, Since python will inject the self variable
+    self.API_TOKEN = "hello" #--> access with self
+
+  def login(self): #--> methods must have self, Since python will inject the self variable
+    r1 = requests.post(API_AUTH, data = {'j_username':'admin','j_password':'312c2dd0b8bc61d02e5539c650f5911488a844e2f8cecc0b237cd38c8400bff3','remember-me':'false','submit':'Login'})
+    print("login -->"+str(r1.status_code))
+    self.API_COOKIES = r1.cookies #--> access with self
+
+  def account(self):
+      print(self.API_COOKIES)
+      r1 = requests.get(API_ACCOUNT,cookies=self.API_COOKIES)
+      print("acount-->"+str(r1.status_code))
+```
+> import using the above file in another file
+```python
+#mainfile.py
+import requests
+import json
+import time
+
+from requests import api
+import apis  #--> import the file
+
+apisObj = apis.apis()  #--> class object
+apisObj.login() #--> class method
+apisObj.account()
+```
+
+
+
+
