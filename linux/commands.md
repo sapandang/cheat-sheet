@@ -35,3 +35,9 @@ sapan    ALL=(ALL:ALL) ALL
 ```
 sudo apt-get install nginx
 ```
+
+# Chaning java alternatives
+```shell
+sudo update-alternatives --config java
+sudo update-alternatives --config javc
+```
