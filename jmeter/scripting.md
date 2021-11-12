@@ -16,7 +16,7 @@ System.out.println("hii ${__property(API)} "+a);
 ## Running in Grid
 * Set the grid host
 ```bash
-Running grid with host
+./jmeter-server -Djava.rmi.server.hostname=xxx.xxx.xxx.xxx
 ```
 
 ## Time Function
