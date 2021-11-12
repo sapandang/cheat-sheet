@@ -119,7 +119,7 @@ if(!prev.getResponseCode().equalsIgnoreCase('200'))
 }
 ```
 
-## Log header `woking with jmeter 4`
+## Log header `working with jmeter 4`
 ```groovy
 //  String request = ctx.getPreviousSampler().getArguments().getArgument(0).getValue();
 //  the above does not work any more with jmeter 4
