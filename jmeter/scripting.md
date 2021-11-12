@@ -118,6 +118,22 @@ if(!prev.getResponseCode().equalsIgnoreCase('200'))
 	
 }
 ```
+## Custom listner 2
+```groovy
+if(!prev.getResponseCode().equalsIgnoreCase('200'))
+{
+
+try{
+System.out.println("ERROR Response code "+prev.getResponseCode() +" | "+ prev.getURL() +" | " + " | "+ sampler.getArguments());
+
+//+prev.getResponseDataAsString()
+}catch(Exception e)
+{
+
+}
+}
+```
+
 
 ## Log header `working with jmeter 4`
 ```groovy
