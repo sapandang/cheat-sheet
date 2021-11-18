@@ -176,7 +176,11 @@ for (int i=0;i<arguments.getArgumentCount();i++)
 SampleResult.setResponseData("asd");
 SampleResult.setDataType(org.apache.jmeter.samplers.SampleResult.TEXT);
 ```
-
+## IF clause in the sampler
+```groovy
+${__javaScript("${callpagi}" != "success,1",)}
+${__groovy("1".equals("${hasdelSync}"))}
+```
 
 
 
