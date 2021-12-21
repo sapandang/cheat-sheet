@@ -180,9 +180,13 @@ SampleResult.setDataType(org.apache.jmeter.samplers.SampleResult.TEXT);
 ```groovy
 ${__javaScript("${callpagi}" != "success,1",)}
 ${__groovy("1".equals("${hasdelSync}"))}
+${__jexl3(${lineno}%3 == 0)}
 ```
 
-
+## Jmeter Thread Number
+```
+${__threadNum}
+```
 
 
 
