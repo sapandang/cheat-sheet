@@ -181,6 +181,12 @@ SampleResult.setDataType(org.apache.jmeter.samplers.SampleResult.TEXT);
 ${__javaScript("${callpagi}" != "success,1",)}
 ${__groovy("1".equals("${hasdelSync}"))}
 ${__jexl3(${lineno}%3 == 0)}
+${__groovy( (${__threadNum}%2) != 0 )} //-- works
+
+// test the expression by creating a jsr223 sampler and inserting the code
+//eg:
+System.out.println(""+"${__threadNum}");
+System.out.println(""+"${__groovy( (${__threadNum}%2) != 0 )}");
 ```
 
 ## Jmeter Thread Number
