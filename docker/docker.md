@@ -22,3 +22,9 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
    
 ```
+* Testing if all works fine
+```bash
+sudo docker run hello-world
+# this will run the hello-world docker
+```
+
