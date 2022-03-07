@@ -1,1 +1,10 @@
 # Docker cheatsheet
+
+## How do I SSH into a running container
+> reference https://phase2.github.io/devtools/common-tasks/ssh-into-a-container/
+
+There is a docker exec command that can be used to connect to a container that is already running.
+
+* Use `docker ps` to get the name of the existing container
+* Use the `command docker exec -it <container name> /bin/bash` to get a bash shell in the container
+* Generically, use `docker exec -it <container name> <command>` to execute whatever command you specify in the container.
