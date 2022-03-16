@@ -53,6 +53,20 @@ sourceSets {
     main.resources.srcDirs = ['chalba/resources']
 }
 ```
+## building fat jar
+```gradle
+jar {
+
+    manifest {
+        attributes "Main-Class": "skd.HelloPlugin"
+    }
+    zip64 = true
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+```
+
 
 
 
