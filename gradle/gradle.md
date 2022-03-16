@@ -98,8 +98,10 @@ application {
 sourceCompatibility = 1.8
 ```
 
+## Include jars from dir
+```gradle
+dependencies {
 
-
-
-
-
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+```
