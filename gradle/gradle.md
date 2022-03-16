@@ -53,6 +53,21 @@ sourceSets {
     main.resources.srcDirs = ['chalba/resources']
 }
 ```
+OR
+```
+sourceSets {
+    main {
+        java {
+            srcDirs = [] // don't compile Java code twice
+        }
+        groovy {
+            srcDirs = [ 'src/main/groovy', 'src/main/java' ]
+        }
+    }
+}
+```
+
+
 ## building fat jar
 ```gradle
 jar {
@@ -66,6 +81,23 @@ jar {
     }
 }
 ```
+
+## Building distribution
+```gradle
+plugins {
+    id 'java'
+    id 'application'
+    id 'groovy'
+}
+
+application {
+    mainClassName = 'skd.TrackApe'
+    applicationName = 'trackape'
+}
+
+sourceCompatibility = 1.8
+```
+
 
 
 
