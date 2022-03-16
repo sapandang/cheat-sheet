@@ -100,8 +100,18 @@ sourceCompatibility = 1.8
 
 ## Include jars from dir
 ```gradle
+plugins {
+    id 'java-library' //only for gradle > 7
+    id 'java' // comment this gradle > 7
+}
+
+
 dependencies {
 
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    
+    //gradle > 7
+    implementation fileTree(dir: "/home/sapan/tools/ldr/ldr/lib/extlib", includes: ['*.jar'])
+
 }
 ```
