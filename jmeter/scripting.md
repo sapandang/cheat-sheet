@@ -186,6 +186,11 @@ ${__javaScript("${callpagi}" != "success,1",)}
 ${__groovy("1".equals("${hasdelSync}"))}
 ${__jexl3(${lineno}%3 == 0)}
 ${__groovy( (${__threadNum}%2) != 0 )} //-- works
+//-----------------------
+${__groovy(vars.get("lastPage") != "true" )}
+
+
+${__groovy( prev.getResponseDataAsString().contains("success\,1") )}
 
 // test the expression by creating a jsr223 sampler and inserting the code
 //eg:
@@ -197,6 +202,8 @@ System.out.println(""+"${__groovy( (${__threadNum}%2) != 0 )}");
 ```
 ${__threadNum}
 ```
+
+
 
 
 
