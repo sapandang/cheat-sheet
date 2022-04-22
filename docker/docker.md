@@ -8,3 +8,8 @@ There is a docker exec command that can be used to connect to a container that i
 * Use `docker ps` to get the name of the existing container
 * Use the `command docker exec -it <container name> /bin/bash` to get a bash shell in the container
 * Generically, use `docker exec -it <container name> <command>` to execute whatever command you specify in the container.
+
+## inspect the docker
+```
+docker inspect <containerID>
+```
