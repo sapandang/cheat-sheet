@@ -35,3 +35,48 @@ module.exports = {
 };
 ```
 
+## splitting route file
+* route1.js
+```
+import BookedList from '../views/orders/views/BookedList.vue';
+
+export default [
+
+        {
+        path: '/bookedlist',
+        name: 'bookedlist',
+        component: BookedList
+      },
+
+]
+   
+```
+* main router `index.js`
+```javascript
+//import the splitted routes
+import route1 from './route1'
+
+ {
+    path: '/home',
+    name: 'Home',
+    component: Home,
+    children: [
+      ...OrdersRoutes,
+      {
+        path: '/dash',
+        name: 'dash',
+        component: Dash
+      }, 
+      ]
+
+```
+
+
+
+
+> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_array_literals
+> https://stackoverflow.com/questions/48264980/splitting-routes-into-separate-files
+
+
+
+
