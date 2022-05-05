@@ -35,3 +35,10 @@ git add README.md
 git commit -a -m "Initial Commit"
 git push origin orphan_name
 ```
+
+### Create Git branch using checkout
+
+```
+git checkout -b <branch-name>
+```
+
