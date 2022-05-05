@@ -42,3 +42,8 @@ git push origin orphan_name
 git checkout -b <branch-name>
 ```
 
+### checkout branch
+```
+git checkout master
+
+```
