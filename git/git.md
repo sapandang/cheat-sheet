@@ -45,5 +45,9 @@ git checkout -b <branch-name>
 ### checkout branch
 ```
 git checkout master
+```
 
+### remove from git cache and FILESYSTEM
+```
+ git rm -rf .
 ```
