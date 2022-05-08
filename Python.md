@@ -36,3 +36,9 @@ python3 get-pip.py
 > References
 > * https://docs.python-guide.org/starting/install3/linux/
 > * https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
+
+
+# pip generate requirement.txt
+```
+pip3 freeze > requirements.txt
+```
