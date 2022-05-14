@@ -42,6 +42,18 @@ ALTER USER username WITH PASSWORD 'mypass';
 ```shell
 sudo apt install postgis postgresql-12-postgis-3
 ```
+## restore from tar file
+```
+pg_restore -c -U postgres -d client03 -v "/tmp/client03.tar" -W
+```
+## restore from psql
+```
+psql databasename < data_base_dump
+```
+
+
+
+
 
 # Keywords
 https://www.postgresql.org/docs/current/sql-keywords-appendix.html
