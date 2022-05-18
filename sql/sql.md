@@ -53,7 +53,20 @@ ADD COLUMN customer_price jsonb DEFAULT '{}'
 ```
 
 
+## PG: delete with constraint
+```
+# trick : disable the triggers 
+ALTER TABLE table1 DISABLE TRIGGER ALL;
+ALTER TABLE table2 DISABLE TRIGGER ALL;
 
+# perform the delete
+DELETE FROM table1;
+DELETE FROM table2;
+
+# enable the triggers
+ALTER TABLE table1 ENABLE TRIGGER ALL;
+ALTER TABLE table2 ENABLE TRIGGER ALL;
+```
 
 
 
