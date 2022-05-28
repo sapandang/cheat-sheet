@@ -8,4 +8,4 @@
 ## Android
 * https://pentestlab.blog/2017/06/26/injecting-metasploit-payloads-into-android-applications-manually/
 * https://pentestlab.blog/2017/03/13/injecting-metasploit-payloads-into-android-applications/
-
+* https://www.hackers-arise.com/post/android-hacking-part-4-android-remote-administration-trojans-rats
