@@ -12,3 +12,6 @@ jarsigner -keystore name.keystore -verbose fb.apk name
 * https://pentestlab.blog/2017/03/13/injecting-metasploit-payloads-into-android-applications/
 * https://www.bulbsecurity.com/backdooring-apks-programmatically/
 * https://pentestlab.blog/2017/06/26/injecting-metasploit-payloads-into-android-applications-manually/
+* activity
+* * https://forum.xda-developers.com/t/tutorial-adding-new-activity-header-sub-menu-to-settings-apk.2712474/
+* * https://forum.xda-developers.com/t/guide-how-to-create-a-new-activity-in-settings.2472042/
