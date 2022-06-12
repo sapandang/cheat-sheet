@@ -36,8 +36,14 @@ sapan    ALL=(ALL:ALL) ALL
 sudo apt-get install nginx
 ```
 
-# Chaning java alternatives
+## Chaning java alternatives
 ```shell
 sudo update-alternatives --config java
 sudo update-alternatives --config javac
 ```
+## view running port
+```
+sudo netstat -tulpn
+```
+* https://www.cyberciti.biz/faq/what-process-has-open-linux-port/
+
