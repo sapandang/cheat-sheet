@@ -82,3 +82,8 @@ xpath getting the last element from the list
 ```
 //div[(@role='combobox' ) and (@tabindex='0')]
 ```
+
+## select list with the text
+```
+(//ul[(@role="listbox") and (@tabindex='0')])[1]//li[text()='Atlanta']
+```
