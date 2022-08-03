@@ -87,3 +87,8 @@ xpath getting the last element from the list
 ```
 (//ul[(@role="listbox") and (@tabindex='0')])[1]//li[text()='Atlanta']
 ```
+
+## select parent from child node
+```
+//button/span[text()='Initiate Routing']/..
+```
