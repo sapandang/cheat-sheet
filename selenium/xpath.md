@@ -78,4 +78,7 @@ xpath getting the last element from the list
 (//*[@name='userTypeform']//select)[last()]
 
 
-
+## find element with multiple attribute
+```
+//div[(@role='combobox' ) and (@tabindex='0')]
+```
