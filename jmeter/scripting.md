@@ -203,7 +203,13 @@ System.out.println(""+"${__groovy( (${__threadNum}%2) != 0 )}");
 ${__threadNum}
 ```
 
-
+## stop thread from script
+```java
+	//file not exists stop thread
+	System.out.println("stopping thread");
+	SampleResult.setStopThread(true);
+	return;
+```
 
 
 
