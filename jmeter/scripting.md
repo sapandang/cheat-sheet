@@ -218,6 +218,15 @@ ${__threadNum}
 def count = vars.get("__jm__lpc__idx");
 System.out.println("got count $count");
 ```
+### exit loop
+```groovy
+if(count == "3")
+{
+System.out.println("execute if");
+
+ctx.setTestLogicalAction(org.apache.jmeter.threads.JMeterContext.TestLogicalAction.BREAK_CURRENT_LOOP );
+}
+```
 
 
 
