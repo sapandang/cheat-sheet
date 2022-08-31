@@ -211,5 +211,13 @@ ${__threadNum}
 	return;
 ```
 
+## loop controller 
+### access count
+```groovy
+//https://jmeter.apache.org/usermanual/component_reference.html#Loop_Controller
+def count = vars.get("__jm__lpc__idx");
+System.out.println("got count $count");
+```
+
 
 
