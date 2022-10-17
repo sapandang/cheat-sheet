@@ -41,6 +41,15 @@ docker image rm 7a17ef1d6f58
 ```
 docker run -p 80:80 -it image-name
 ```
+## run docker
+```
+docker run -it \
+    --restart always \
+    --name localtunnel \
+    --net host \
+    localhost:latest --port 3000
+```    
+
 
 ## view all the processes
 ```
