@@ -31,6 +31,11 @@ docker-compose up -d
 sudo docker images
 ```
 
+## docker remove image
+```
+docker image rm 7a17ef1d6f58
+```
+
 ## run docker in interactive mode
 ```
 docker run -p 80:80 -it image-name
