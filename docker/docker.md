@@ -18,6 +18,7 @@ docker inspect <containerID>
 docker build -t image-name .
 # the directory contain the file named `Dockerfile`
 ```
+> https://docs.docker.com/engine/reference/commandline/build/
 
 ## Starting the yaml container
 * the dir must contain yml file
