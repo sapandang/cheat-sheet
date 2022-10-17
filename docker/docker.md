@@ -13,3 +13,49 @@ There is a docker exec command that can be used to connect to a container that i
 ```
 docker inspect <containerID>
 ```
+## Build docker file
+```
+docker build -t image-name .
+# the directory contain the file named `Dockerfile`
+```
+
+## Starting the yaml container
+* the dir must contain yml file
+```
+docker-compose up -d
+```
+> -d will run it in background
+
+## view all the images
+```
+sudo docker images
+```
+
+## run docker in interactive mode
+```
+docker run -p 80:80 -it image-name
+```
+
+## view all the processes
+```
+ sudo docker ps -a
+```
+
+## remove the container
+```
+sudo docker rm 5478cc604bf4 //5478cc604bf4 --> container id
+```
+
+## view docker logs
+```
+sudo docker logs 513a402cc1a8 //5478cc604bf4 --> container id
+```
+## view docker ip
+```
+sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' 6eac680f260d
+```
+
+## ssh docker
+```
+sudo docker exec it <container_id> /bin/bash
+```
