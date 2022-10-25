@@ -7,6 +7,16 @@
 # install openssh server
 pkg install openssh
 
-# view current user
+# 2. view current user
 whoami
+
+# start server
+sshd
+
+# stop server
+pkill sshd
+
+# set the user password which you got from `2.` line
+passwd u0_a298
+
 ```
