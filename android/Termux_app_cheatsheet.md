@@ -23,3 +23,21 @@ passwd u0_a298
 ssh -p 8022 u0_a123@192.168.1.54
 
 ```
+
+## Live shell sharing
+share the live shell with another user
+```bash
+
+# install the screen
+pkg install screen
+
+# on the primary shell run which need to be shared
+screen -S nix
+
+# run on the secondary shell which want to view
+screen -x nix
+
+# now both shell are live
+```
+
+
