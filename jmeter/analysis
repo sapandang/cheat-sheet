@@ -1,0 +1,7 @@
+```
+select to_timestamp(TRUNC( CAST( timestamp AS bigint ) / 1000 )) from mytable
+
+select * from mytable
+
+update mytable set created = to_timestamp(TRUNC( CAST( timestamp AS bigint ) / 1000 ))
+```
