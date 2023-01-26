@@ -6,3 +6,8 @@
  
  sudo netstat -plunt
 ```
+
+## view outbound traffic
+```
+sudo netstat -nputw
+```
