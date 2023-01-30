@@ -23,7 +23,11 @@ sudo ufw allow 443
 
 > https://ubuntu.com/server/docs/security-firewall
 
-
+## enable docker internal network
+```
+sudo ufw allow from 172.17.0.1/12 to any port  3306
+```
+> `172.17.0.1` resolved to `host.docker.internal` => run ifconf inside docker to view ip
 
 
 
