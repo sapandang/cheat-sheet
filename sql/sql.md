@@ -68,5 +68,11 @@ ALTER TABLE table1 ENABLE TRIGGER ALL;
 ALTER TABLE table2 ENABLE TRIGGER ALL;
 ```
 
+## SQL : updating random value between 2 numbers
+```
+UPDATE products set photos = FLOOR( RAND() * (24-20) + 20);
+```
+
+
 
 
