@@ -26,3 +26,33 @@ $breakpoints: (
 @include media(">tablet", "<950px") {
 }
 ```
+
+## Quasar syntax
+```sass
+<style lang="scss" scoped>
+.content {
+  height: 100%;
+}
+.hotimg {
+  @media (max-width: $breakpoint-sm-max) {
+    height: 140px;
+    max-width: 140px;
+  }
+
+  @media (min-width: $breakpoint-xs-max) {
+    height: 140px;
+    max-width: 250px;
+  }
+  text-align: center;
+}
+
+.midsection {
+  @media (max-width: $breakpoint-sm-max) {
+  }
+
+  @media (min-width: $breakpoint-xs-max) {
+    padding: 10px;
+  }
+}
+</style>
+```
