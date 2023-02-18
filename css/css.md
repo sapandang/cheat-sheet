@@ -11,3 +11,18 @@
    height: 300px
 </style>
 ```
+
+```sass
+//sass
+$breakpoints: (
+  phone: 640px,
+  tablet: 768px,
+  desktop: 1024px,
+) !default;
+
+@include media(">phone", "<tablet") {
+}
+
+@include media(">tablet", "<950px") {
+}
+```
