@@ -35,3 +35,9 @@ usermod -u 1000 www-data
 groupmod -g 1000 www-data
 ```
 
+## change user home directory
+```bash
+RUN usermod -d /app www-data
+```
+
+
