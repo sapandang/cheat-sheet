@@ -11,3 +11,9 @@ composer create-project laravel/laravel ./
 ```
 root /app/public;
 ```
+
+## running php artisian serve
+```
+php artisan serve --host=0.0.0.0 --port=8080
+```
+> host should be 0.0.0.0 when running inside docker
