@@ -47,3 +47,7 @@ sudo netstat -tulpn
 ```
 * https://www.cyberciti.biz/faq/what-process-has-open-linux-port/
 
+## find file greater than 50mb
+```
+find ./ -size +50M
+````
