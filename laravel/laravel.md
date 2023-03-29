@@ -17,3 +17,20 @@ root /app/public;
 php artisan serve --host=0.0.0.0 --port=8080
 ```
 > host should be 0.0.0.0 when running inside docker
+
+## sending fille as response
+```
+
+
+Route::get('/greeting', function () {
+    // return 'Hello World';
+    return response()->file('/app/routes/console.php');
+
+});
+
+Route::get('/art/{id}', function ($id) {
+    // return 'Hello World';
+    return response()->file('/app/assets/articles/'.$id.'.md');
+
+});
+```
