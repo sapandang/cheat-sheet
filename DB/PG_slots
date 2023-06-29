@@ -1,0 +1,7 @@
+# Slots in PG
+
+## View slots
+select slot_name, pg_size_pretty(pg_wal_lsn_diff(pg_current_wal_lsn(),restart_lsn)) as replicationSlotLag, active from pg_replication_slots ;
+
+## Drop slot
+select pg_drop_replication_slot('debconnectorqak8s');
