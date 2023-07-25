@@ -20,3 +20,7 @@ server {
 ```
 4. run the certbot.  `sudo certbot --nginx -d track.example.in`
 
+## wild card domain
+```
+sudo certbot --server https://acme-v02.api.letsencrypt.org/directory -d *.codeport.mydomain.in --manual --preferred-challenges dns-01 certonly
+```
