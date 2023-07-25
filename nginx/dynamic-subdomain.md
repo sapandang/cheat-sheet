@@ -1,36 +1,38 @@
 ## Dynamic port
 
-  ```
-  server {
+```
+server {
     listen 80;
     listen [::]:80;
   #  server_name *.codeport.my.in;
         server_name ~^(?<port>.+)\.codeport\.my\.in;
 
     location / {
-      proxy_pass http://localhost:$port/;
-      proxy_set_header Host $host;
-      proxy_set_header Upgrade $http_upgrade;
-      proxy_set_header Connection upgrade;
-      proxy_set_header Accept-Encoding gzip;
+      proxy_pass http://127.0.0.1:$port;
+		
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      		proxy_set_header X-Forwarded-Proto $scheme;
+      		proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header Host $http_host;
+
     }
 }
 
 server {
-   # server_name *.codeport.my.in;
+   # server_name *.codeport.ionoxsoftware.in;
       server_name ~^(?<port>.+)\.codeport\.my\.in;
 
     location / {
-      proxy_pass http://localhost:$port/;
-      proxy_set_header Host $host;
-      proxy_set_header Upgrade $http_upgrade;
-      proxy_set_header Connection upgrade;
-      proxy_set_header Accept-Encoding gzip;
+      proxy_pass http://127.0.0.1:$port;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      		proxy_set_header X-Forwarded-Proto $scheme;
+      		proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header Host $http_host;
+
     }
 
     
 listen 443 ssl;
-  server_name *.codeport.my.in;
 
 ssl_certificate /etc/letsencrypt/live/codeport.my.in/fullchain.pem; # managed by Certbot
     ssl_certificate_key /etc/letsencrypt/live/codeport.my.in/privkey.pem; # managed by Certbot
@@ -39,6 +41,7 @@ ssl_certificate /etc/letsencrypt/live/codeport.my.in/fullchain.pem; # managed by
   ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 
 }
+
 ```
 ## Refernce
  > https://codex.so/resolving-subdomains-dynamically-via-nginx
