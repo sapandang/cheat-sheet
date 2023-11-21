@@ -1,3 +1,9 @@
+---
+title: "sql queries cheatsheet"
+description: Sql queries cheatsheet
+---
+
+
 # SQL cheat sheet
 
 ## Get duplicate count

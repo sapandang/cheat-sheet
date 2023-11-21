@@ -1,3 +1,9 @@
+---
+title: "installing python in ubuntu"
+description: installing python in ubuntu
+---
+
+
 # Installing Python3.8
 
 ```

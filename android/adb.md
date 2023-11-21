@@ -1,3 +1,8 @@
+---
+title: adb commands
+description: List of usefull adb commands
+---
+
 # adb commands
 
 ## get the current activity details

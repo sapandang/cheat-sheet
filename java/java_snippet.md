@@ -1,3 +1,44 @@
+---
+title: "java cheatsheet"
+description: Usefull java snippets
+---
+
+# Date Time
+# JAVA
+
+## Get timestamp
+```java
+SimpleDateFormat s = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss:SSS");
+String timestamp = s.format(new Date());
+```
+
+## convert date
+```
+        DateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+        Date date = (Date)formatter.parse("12-11-2022");
+
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String mydate = dateFormat.format(date);
+
+        System.out.println(mydate);
+```
+
+# install openjdk 11 in ubuntu 16
+
+
+* Add the repository
+```
+sudo add-apt-repository ppa:openjdk-r/ppa
+```
+* Update package list
+```
+sudo apt-get update
+```
+* Install openjdk-11-jdk
+```
+sudo apt install openjdk-11-jdk
+```
+
 # Setting up the visual vm for the remote
 
 * Download jvisualVM.

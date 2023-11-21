@@ -1,8 +1,12 @@
+---
+title: "Generate ssl certificate with bacme"
+description: Generate ssl certificate with bacme
+---
+
 # Generating LetsEncrypt certificate
 
 ## clinet
 https://gitlab.com/sinclair2/bacme/-/tree/master
-
 
 ## Generate the certificate
 * `./bacme mydomain.com`
@@ -22,7 +26,6 @@ server {
 * acame challange must be accessible by the URL
 * press enter the bacme
 
-
 ## configure nginx with ssl
 ```
 server {    
@@ -31,12 +34,9 @@ server {
         ssl on;
         ssl_certificate /home/myuser/ssl_certificates/mydomian.com.crt;
         ssl_certificate_key /home/myuser/ssl_certificates/mydomain.com.key;
+
+        server_name mydomain.com;
 	
-
-
-       server_name mydomain.com;
-	
-
            location / 
                {
 		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;

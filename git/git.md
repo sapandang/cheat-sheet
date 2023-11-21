@@ -1,8 +1,13 @@
+---
+title: "GIT tricks"
+description: usefull tips realted to git
+---
+
 # Git Tricks
 
 ### working with existing local code
 ```bash
-echo "# IonoxGrocery-PHP-AdminPanel-" >> README.md
+echo "# -PHP-AdminPanel-" >> README.md
 git init
 git add README.md
 git commit -m "first commit"

@@ -1,3 +1,8 @@
+---
+title: "setting up dynamic subdomain with nginx"
+description: setting up dynamic subdomain with nginx
+---
+
 ## Dynamic port
 
 ```
@@ -19,7 +24,7 @@ server {
 }
 
 server {
-   # server_name *.codeport.ionoxsoftware.in;
+   # server_name *.codeport.my.in;
       server_name ~^(?<port>.+)\.codeport\.my\.in;
 
     location / {

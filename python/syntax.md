@@ -1,4 +1,7 @@
-# Python Syntax
+---
+title: "python snippet"
+description: rough python snippet
+---
 
 
 ## Variable scope
@@ -37,7 +40,7 @@ import time
 MAIN_URL="https://myapp.co"
 API_AUTH=MAIN_URL+"/app/authentication"
 API_ACCOUNT=MAIN_URL+"/app/rest/account"
-API_DYNAMIC_ROUTING_SYNC=MAIN_URL+"/v1/app/rest/dynamic_routing_sync?endDate=2021-08-31&pageNo=0&recordsPerPage=500&sortOn=date&sortType=DESC&startDate=2021-08-09&status=Success";
+API_DYNAMIC_ROUTING_SYNC=MAIN_URL+"/v1/app/rest/pathoftheroute";
 
 # API classes
 class apis:

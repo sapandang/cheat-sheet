@@ -1,3 +1,8 @@
+---
+title: "usefull linux commands"
+description: usefull linux commands
+---
+
 # Linux
 
 ## Getting lines from files
@@ -15,10 +20,10 @@ sudo apt-get install openjdk-8-jdk
 
 ## Create User
 ```bash
-useradd sapan  `lowlevel does not create home dir`
-passwd sapan `add the password`
-userdel sapan `delete user`
-adduser sapan `add user with home dir`
+useradd username  `lowlevel does not create home dir`
+passwd username `add the password`
+userdel username `delete user`
+adduser username `add user with home dir`
 ```
 ## Give sudo acccess
 
@@ -27,7 +32,7 @@ sudo visudo
 # Add entry
 # User privilege specification
 root    ALL=(ALL:ALL) ALL
-sapan    ALL=(ALL:ALL) ALL
+username    ALL=(ALL:ALL) ALL
 ```
 
 ## Setup nginx

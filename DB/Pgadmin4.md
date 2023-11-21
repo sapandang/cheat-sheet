@@ -1,3 +1,9 @@
+---
+title: "Pgadmin snippets"
+description: Snippets for the pgadmin
+---
+
+
 # Running installed pgadmin4
 
 ```shell

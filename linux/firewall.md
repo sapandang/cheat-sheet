@@ -1,3 +1,8 @@
+---
+title: "linux firewall using ufw"
+description: setting up linux firewall using ufw
+---
+
 # Firewall
 
 ## Firewall using ufw

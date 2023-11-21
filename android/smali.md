@@ -1,3 +1,7 @@
+---
+title: "android smali assembly"
+description: snippets for the smali
+---
 # add taoast
 
 ```

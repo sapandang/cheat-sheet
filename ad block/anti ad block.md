@@ -1,4 +1,10 @@
-# Anti ad Block for blogger.com
+---
+title: Anti ads blocker for blogger.com website
+description: Show popup when adblocker are enabled in the blogger.com website
+---
+
+
+# Anti ad Block for blogger.com website
 
 * Place inside <head></head>
 

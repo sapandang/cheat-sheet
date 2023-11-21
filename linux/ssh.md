@@ -1,3 +1,9 @@
+---
+title: "ssh commands cheatsheet"
+description: ssh commands cheatsheet
+---
+
+
 # SSH commands
 
 ### Setting up config file

@@ -1,3 +1,8 @@
+---
+title: "Android Termux app cheatsheet"
+description: Android Termux app cheatsheet
+---
+
 # Android Termux app cheatsheet
 > https://github.com/termux/termux-app#github
 

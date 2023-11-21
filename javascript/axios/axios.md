@@ -1,3 +1,9 @@
+---
+title: "Axios cheatsheet"
+description: Snippet for javascript axios network library
+---
+
+
 # upload file
 ```js
  api_uploadFile() {

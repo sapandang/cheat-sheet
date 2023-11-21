@@ -1,3 +1,8 @@
+---
+title: "install docker in ubuntu"
+description: Sinppet for installing docker in the ubuntu
+---
+
 # Docker Cheatsheet
 
 ## Install Docker in Ubuntu 16.04.7 LTS xenial

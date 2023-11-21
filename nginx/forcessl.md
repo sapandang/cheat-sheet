@@ -1,3 +1,8 @@
+---
+title: "nginx force ssl"
+description: forcing the ssl with the nginx
+---
+
 
 ```
 server {

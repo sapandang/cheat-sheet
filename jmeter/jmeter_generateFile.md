@@ -1,4 +1,10 @@
-```
+---
+title: "jmeter generating files"
+description: Generating files with jmeter JSR223Sampler using groovy
+---
+
+
+```groovy
  // DELETE THE generated file
 
 import groovy.io.FileType;
@@ -7,7 +13,7 @@ new File(fileName).delete();
 ```
 
 
-```
+```groovy
 import java.io.FileWriter;
 import java.util.Arrays;
 import java.io.Writer;

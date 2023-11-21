@@ -1,3 +1,8 @@
+---
+title: "gradle tricks"
+description: usefull tips realted to gradle
+---
+
 ## Generate Runner shell script
 `add in the build.gradle`
 

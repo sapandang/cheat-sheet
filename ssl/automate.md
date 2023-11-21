@@ -1,3 +1,8 @@
+---
+title: "Generate ssl certificate"
+description: Generate ssl certificate
+---
+
 # Automate SSL Gen.
 Automate generation of ssl in server.
 

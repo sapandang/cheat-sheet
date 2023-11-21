@@ -1,3 +1,8 @@
+---
+title: "batch rename file using nodejs"
+description: Snippet for batch renaming file using nodejs
+---
+
 # Batch rename file
 
 ```javascript

@@ -1,4 +1,9 @@
-# Vuejs Reference
+---
+title: "vue cheatsheet"
+description: vue cheatsheet
+---
+
+# Vuejs Cheatsheet
 
 ## Disable the Eslint
 ```javascript

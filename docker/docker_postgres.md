@@ -1,3 +1,9 @@
+---
+title: "creating postgres database docker compose file"
+description: Creating the docker compose file the postgres database
+---
+
+
 # Docker file for postgres and pgadmin
 
 ## docker-compose.yml
@@ -12,12 +18,12 @@ services:
     environment:
       - POSTGRES_PASSWORD=a
     volumes:
-      - /home/sapan/volumes/postgres12:/var/lib/postgresql/data
+      - /home/user/volumes/postgres12:/var/lib/postgresql/data
    pgadmin:
     image: dpage/pgadmin4 
     network_mode: "host"  
     volumes:
-     - /home/sapan/volumes/pgadmin4:/var/lib/pgadmin
+     - /home/user/volumes/pgadmin4:/var/lib/pgadmin
     environment:
       - PGADMIN_LISTEN_PORT=5444
       - PGADMIN_DEFAULT_EMAIL=a@a.com

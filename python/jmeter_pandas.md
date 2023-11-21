@@ -1,3 +1,9 @@
+---
+title: "processing jmeter file with pandas"
+description: processing jmeter file with pandas
+---
+
+
 # Pandas Library
 
 > using jmeter jtl as input
@@ -35,10 +41,9 @@ print(gk.iloc[1])
 
 ```    
 ```
-                            responseCode        elapsed <-- top level remove this to make dist gen easy                    
-                                   count not200     min   max         mean   q90
+esponseCode        elapsed <-- top level remove this to make dist gen easy                    
+count not200     min   max         mean   q90
 label                                                                           
 285 /app/authentication WEB           30      1     524   639   570.400000   639
 authenticate web                      30      0     524   639   570.400000   639
-get_pickup_eventsV2                37506      0      16  2834  1439.512451  1922
 ```

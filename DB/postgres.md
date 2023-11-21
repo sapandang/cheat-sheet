@@ -1,3 +1,10 @@
+---
+title: "Postgres snippets"
+description: Snippets for the Postgres
+---
+
+
+
 # Postgres database
 
 ## install postgres
@@ -51,6 +58,29 @@ pg_restore -c -U postgres -d client03 -v "/tmp/client03.tar" -W
 psql databasename < data_base_dump
 ```
 
+## Slots in PG
+
+### View slots
+```sql
+select slot_name, pg_size_pretty(pg_wal_lsn_diff(pg_current_wal_lsn(),restart_lsn)) as replicationSlotLag, active from pg_replication_slots ;
+```
+### Drop slot
+```
+select pg_drop_replication_slot('mydb');
+```
+
+## truncate table and reset sequence
+```
+TRUNCATE  TABLE  users RESTART IDENTITY CASCADE;
+```
+
+> https://www.postgresql.org/docs/current/sql-truncate.html
+
+
+## Query JSON
+```
+select row_to_json(da) from (select * from company)da;
+```
 
 
 

@@ -32,7 +32,7 @@ echo "end log capture $ShellID "
 echo "Starting case 1: AddProcess Thread 1"
 ./input/restore_file.sh
 log_startCapture add_process_th_1.csv
-jmeter -n -t 1_ADDOrderProcess.jmx -q input/configs/add_process_th_1.prop -l output/add_process_th_1.csv 
+jmeter -n -t 1_ADDOrder.jmx -q input/configs/add_process_th_1.prop -l output/add_process_th_1.csv 
 echo "Case 1: Finished"
 log_endCapture
 

@@ -1,13 +1,19 @@
+---
+title: "user management command in linux"
+description: user management command in linux
+---
+
+
 # User Management
 
 
 
 ## Add User
 ```
-useradd sapan  `lowlevel does not create home dir`
-passwd sapan `add the password`
-userdel sapan `delete user`
-adduser sapan `add user with home dir`
+useradd username  `lowlevel does not create home dir`
+passwd username `add the password`
+userdel username `delete user`
+adduser username `add user with home dir`
 ```
 
 ## Give user sudo access
@@ -16,7 +22,7 @@ sudo visudo
 # Add entry
 # User privilege specification
 root    ALL=(ALL:ALL) ALL
-sapan    ALL=(ALL:ALL) ALL
+username    ALL=(ALL:ALL) ALL
 ```
 
 ## give user login access
