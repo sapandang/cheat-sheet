@@ -13,7 +13,7 @@ description: Some snippets for the MongoDb database
 
 ## import
 ```bash
-./mongoimport -d geoData -c odi1 --type json  --file /home/sapan/Documents/workspace/javaProject/geoData/output.geojson 
+./mongoimport -d geoData -c odi1 --type json  --file /home/username/Documents/workspace/javaProject/geoData/output.geojson 
 ```
 ## convert geoJson
 ```bash
