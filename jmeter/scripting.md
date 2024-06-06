@@ -234,5 +234,8 @@ ctx.setTestLogicalAction(org.apache.jmeter.threads.JMeterContext.TestLogicalActi
 }
 ```
 
-
+## Read jmeter body from file
+```
+${__groovy(new File('/home/sapan/trash/data.json').text)}
+```
 
