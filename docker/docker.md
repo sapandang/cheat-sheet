@@ -80,3 +80,10 @@ sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' 6eac680f260d
 ```
 sudo docker exec it <container_id> /bin/bash
 ```
+
+## remove all the docker images and containers
+```
+sudo docker stop $(sudo docker ps -aq)
+sudo docker rm $(sudo docker ps -aq)
+sudo docker rmi $(sudo docker images -q)
+```
