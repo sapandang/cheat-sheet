@@ -1,6 +1,8 @@
 ---
 title: "jmeter script cheatsheet"
 description: jmeter scripting cheatsheet
+tags: jmeter
+
 ---
 
 

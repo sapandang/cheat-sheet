@@ -1,6 +1,8 @@
 ---
 title: "setting up dynamic subdomain with nginx"
 description: setting up dynamic subdomain with nginx
+tags: nginx
+
 ---
 
 ## Dynamic port

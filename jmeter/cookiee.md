@@ -1,6 +1,7 @@
 ---
 title: "running selenium with jmeter"
 description: running selenium with jmeter and manipulate the cookiess
+tags: jmeter
 ---
 
 

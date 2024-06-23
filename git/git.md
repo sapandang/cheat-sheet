@@ -1,6 +1,7 @@
 ---
 title: "GIT tricks"
 description: usefull tips realted to git
+tags: git,github
 ---
 
 # Git Tricks

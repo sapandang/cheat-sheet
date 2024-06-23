@@ -1,6 +1,8 @@
 ---
 title: "gradle tricks"
 description: usefull tips realted to gradle
+tags: gradle,build tool
+
 ---
 
 ## Generate Runner shell script

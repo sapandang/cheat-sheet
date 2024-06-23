@@ -1,6 +1,8 @@
 ---
 title: "ssh commands cheatsheet"
 description: ssh commands cheatsheet
+tags: linux,ssh
+
 ---
 
 

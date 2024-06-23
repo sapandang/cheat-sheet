@@ -1,6 +1,8 @@
 ---
 title: "usefull linux commands"
 description: usefull linux commands
+tags: linux
+
 ---
 
 # Linux

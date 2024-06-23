@@ -1,6 +1,7 @@
 ---
 title: "groovy snippet"
 description: Use full groovy snippets
+tags: groovy
 ---
 
 # Groovy file operations

@@ -1,6 +1,7 @@
 ---
 title: Anti ads blocker for blogger.com website
 description: Show popup when adblocker are enabled in the blogger.com website
+tags: adblock,blogger.com
 ---
 
 

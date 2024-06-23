@@ -1,6 +1,8 @@
 ---
 title: "Pgadmin snippets"
 description: Snippets for the pgadmin
+tags: pgadmin
+
 ---
 
 

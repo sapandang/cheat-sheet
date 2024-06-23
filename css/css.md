@@ -1,6 +1,8 @@
 ---
 title: "CSS Snippets"
 description: Some CSS snippets
+tags: css
+
 ---
 
 

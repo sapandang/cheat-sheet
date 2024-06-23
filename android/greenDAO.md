@@ -1,6 +1,8 @@
 ---
 title: "greenDAO: Android ORM for your SQLite database"
 description: Tips for using the greenDAO
+tags: android
+
 ---
 
 # greenDAO: Android ORM for your SQLite database

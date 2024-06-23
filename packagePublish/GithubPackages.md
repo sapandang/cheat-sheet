@@ -1,6 +1,8 @@
 ---
 title: "Publish jar to github pacakages via gradle"
 description: guide to publish jar packages to github packages with gradle
+tags: gradle,build tool,package publishing,github
+
 ---
 
 ## Requirement

@@ -1,6 +1,8 @@
 ---
 title: "linux firewall using ufw"
 description: setting up linux firewall using ufw
+tags: linux
+
 ---
 
 # Firewall

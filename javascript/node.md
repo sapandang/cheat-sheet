@@ -1,6 +1,8 @@
 ---
 title: "batch rename file using nodejs"
 description: Snippet for batch renaming file using nodejs
+tags: nodejs,javascript
+
 ---
 
 # Batch rename file

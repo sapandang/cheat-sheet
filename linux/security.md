@@ -1,6 +1,8 @@
 ---
 title: "linux security cheatsheet"
 description: few commands realted to linux security
+tags: linux
+
 ---
 
 

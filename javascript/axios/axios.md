@@ -1,6 +1,8 @@
 ---
 title: "Axios cheatsheet"
 description: Snippet for javascript axios network library
+tags: axios,javascript
+
 ---
 
 

@@ -1,9 +1,9 @@
 ---
 title: apktool
 description: Some usefull links for using the apktool
+tags: apktool,android
 ---
 
-Some usefull links for using the apktool
 
 ## generate keystore and sign the apk
 
@@ -11,7 +11,6 @@ Some usefull links for using the apktool
 keytool -genkey -keystore name.keystore -validity 10000 -alias name -keyalg rsa
 jarsigner -keystore name.keystore -verbose fb.apk name
 ```
-
 
 # tut
 * https://www.hebunilhanli.com/wonderland/mobile-security/decompile-modify-smali-recompile-and-sign-apk/

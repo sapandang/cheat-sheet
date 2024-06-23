@@ -1,6 +1,7 @@
 ---
-title: "Android Termux app cheatsheet"
+title: Android Termux app cheatsheet
 description: Android Termux app cheatsheet
+tags: android,termux app
 ---
 
 # Android Termux app cheatsheet

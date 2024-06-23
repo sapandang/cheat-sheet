@@ -1,6 +1,7 @@
 ---
 title: "docker cheatsheet"
 description: contains usefull tip and tricks related to docker
+tags: docker
 ---
 
 

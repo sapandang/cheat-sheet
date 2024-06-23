@@ -1,6 +1,7 @@
 ---
 title: "Postgres snippets"
 description: Snippets for the Postgres
+tags: postgres
 ---
 
 

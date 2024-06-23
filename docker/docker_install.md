@@ -1,6 +1,8 @@
 ---
 title: "install docker in ubuntu"
 description: Sinppet for installing docker in the ubuntu
+tags: docker
+
 ---
 
 # Docker Cheatsheet

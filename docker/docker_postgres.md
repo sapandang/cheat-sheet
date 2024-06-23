@@ -1,6 +1,8 @@
 ---
 title: "creating postgres database docker compose file"
 description: Creating the docker compose file the postgres database
+tags: docker,postgres
+
 ---
 
 

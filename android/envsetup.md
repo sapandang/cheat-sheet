@@ -1,6 +1,8 @@
 ---
 title: android sdk setup helps
 description: Some usefull tips for androidsdk
+tags: android
+
 ---
 
 Some usefull tips for android skd

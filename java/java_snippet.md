@@ -1,10 +1,10 @@
 ---
 title: "java cheatsheet"
 description: Usefull java snippets
+tags: java
 ---
 
 # Date Time
-# JAVA
 
 ## Get timestamp
 ```java

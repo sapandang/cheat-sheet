@@ -1,6 +1,8 @@
 ---
 title: "php cheatsheet"
 description: php cheatsheet
+tags: php
+
 ---
 
 # Parse the JSON from POST request

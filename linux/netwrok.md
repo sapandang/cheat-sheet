@@ -1,6 +1,8 @@
 ---
 title: "linux network related commands"
 description: network related commands for the linux
+tags: linux
+
 ---
 
 

@@ -1,6 +1,8 @@
 ---
 title: "nginx do not accept not linked domains"
 description: nginx resolve issue when un mapped domain are redirecting to other domain
+tags: nginx
+
 ---
 
 # issue when un mapped domain goes to existing domain.

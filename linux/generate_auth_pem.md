@@ -1,6 +1,8 @@
 ---
 title: "linux generate ssh key or pem file"
 description: generate SSL key file to by pass password while loggin into the server
+tags: linux
+
 ---
 
 generate SSL key file to by pass password while loggin into the server

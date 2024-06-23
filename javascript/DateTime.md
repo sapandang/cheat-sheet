@@ -1,6 +1,7 @@
 ---
 title: "javascript cheatsheet"
 description: Usefull javascript snippets
+tags: javascript
 ---
 
 # Javascript cheatsheet

@@ -1,6 +1,8 @@
 ---
 title: "MongoDb Snippets"
 description: Some snippets for the MongoDb database
+tags: mongodb
+
 ---
 
 

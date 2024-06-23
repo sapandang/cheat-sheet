@@ -1,6 +1,8 @@
 ---
 title: "user management command in linux"
 description: user management command in linux
+tags: linux
+
 ---
 
 

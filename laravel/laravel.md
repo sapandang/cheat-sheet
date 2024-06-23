@@ -1,6 +1,8 @@
 ---
 title: "laravel cheatsheet"
 description: laravel cheatsheet
+tags: laravel,php
+
 ---
 
 
