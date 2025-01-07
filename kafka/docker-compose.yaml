@@ -1,4 +1,5 @@
 # Access kowl from http://localhost:8081/
+# Ref https://developer.confluent.io/confluent-tutorials/kafka-on-docker/
 services:
   kafka:
     image: confluentinc/cp-kafka:latest
@@ -6,9 +7,10 @@ services:
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://host.docker.internal:9092
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_LISTENERS: PLAINTEXT_HOST://0.0.0.0:9092,PLAINTEXT://kafka:29092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
     depends_on:
       - zookeeper
     ports:
@@ -30,7 +32,7 @@ services:
     image: docker.redpanda.com/redpandadata/console:latest
     container_name: kowlw
     environment:
-      KAFKA_BROKERS: "host.docker.internal:9092"
+      KAFKA_BROKERS: "kafka:29092"
       KAFKA_CONNECTION_CHECK: "true"
     depends_on:
       - kafka
@@ -48,4 +50,3 @@ services:
   #     - kafka
   #   ports:
   #     - 8080:8080
-
