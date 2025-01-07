@@ -1,0 +1,51 @@
+# Access kowl from http://localhost:8081/
+services:
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    container_name: kafka
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://host.docker.internal:9092
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    extra_hosts:
+    - "host.docker.internal:host-gateway"
+    
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+
+  kowlw:
+    image: docker.redpanda.com/redpandadata/console:latest
+    container_name: kowlw
+    environment:
+      KAFKA_BROKERS: "host.docker.internal:9092"
+      KAFKA_CONNECTION_CHECK: "true"
+    depends_on:
+      - kafka
+    ports:
+      - "8081:8080"
+    extra_hosts:
+    - "host.docker.internal:host-gateway"
+
+  # kowl:
+  #   image: maulanamalik/kafka-kowl:latest
+  #   container_name: kowl
+  #   environment:
+  #     KAFKA_BROKERS: "kafka:9092"
+  #   depends_on:
+  #     - kafka
+  #   ports:
+  #     - 8080:8080
+
